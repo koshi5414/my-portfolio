@@ -1,0 +1,224 @@
+/* 写真が浮かび上がるアニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#mypicture {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  /*animation: fadeIn 1.5s ease-in-out; */
+}
+#container {
+  background-color: #e0f7fa; /* 薄い青色 */
+  padding-bottom: 20px; /* コンテンツの下に少し余白を追加 */
+  text-align: center; /* 中央揃え */
+}
+
+#geek {
+  height: 150px; /* サイズは適宜調整 */
+  width: 150px; /* サイズは適宜調整 */
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg) scale(1); /* 位置、回転、スケールを統合 */
+  border-radius: 10%; /* 角を少し丸く */
+  overflow: hidden;
+}
+#musle {
+  height: 150px; /* サイズは適宜調整 */
+  width: 100px; /* サイズは適宜調整 */
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translate(-50%, -50%) rotate(40deg); /* 位置と角度を調整 */
+  border-radius: 10%; /* 角を少し丸く */
+  overflow: hidden;
+}
+#trip {
+  height: 300px; /* サイズは適宜調整 */
+  width: 500px; /* サイズは適宜調整 */
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  transform: translate(50%, -50%) rotate(0deg); /* 位置と角度を調整 */
+  border-radius: 10%; /* 角を少し丸く */
+  overflow: hidden;
+}
+#insta {
+  height: 150px; /* サイズは適宜調整 */
+  width: 100px; /* サイズは適宜調整 */
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  transform: translate(-50%, -50%) rotate(0deg); /* 位置と角度を調整 */
+  border-radius: 10%; /* 角を少し丸く */
+  overflow: hidden;
+}
+#disny {
+  height: 150px; /* サイズは適宜調整 */
+  width: 300px; /* サイズは適宜調整 */
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(0deg); /* 位置と角度を調整 */
+  border-radius: 10%; /* 角を少し丸く */
+  overflow: hidden;
+}
+#introduction {
+  background-color: #ffffff; /* 白背景 */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px; /* 角を少し丸く */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+  display: inline-block; /* コンテンツの幅に合わせる */
+  text-align: center; /* 中央揃え */
+  width: 300px; /* コンテンツの幅を指定 */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Dancing Script", cursive; /* 筆記体風フォントを適用 */
+}
+
+#introduction h2 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #333;
+  letter-spacing: 1px; /* 文字間のスペース */
+}
+
+#introduction p {
+  font-size: 1.2em;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+#hobby {
+  background-color: #ffffff; /* 白背景 */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px; /* 角を少し丸く */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+  text-align: left; /* 左揃え */
+  width: auto; /* コンテンツに合わせて幅を調整 */
+  font-family: inherit; /* デフォルトのフォントを使用 */
+}
+
+#hobby h2 {
+  margin-top: 0;
+  margin-bottom: 10px; /* タイトルと趣味の間にスペースを追加 */
+  font-size: 2em;
+  color: #333;
+  letter-spacing: 1px; /* 文字間のスペース */
+}
+
+.hobby-item {
+  background-color: #f0f0f0; /* ライトグレー背景 */
+  padding: 10px;
+  border-radius: 5px; /* 角を少し丸く */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+  font-size: 1.1em;
+  color: #333;
+  flex: 1; /* ボックスを均等に配置 */
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 10px; /* ボックス間に少しスペースを追加 */
+}
+
+#hobby {
+  display: flex;
+  flex-direction: column; /* 垂直方向に要素を配置 */
+  gap: 10px; /* 各ボックスの間隔を設定 */
+}
+#hobby h2 {
+  margin-top: 0;
+  margin-bottom: 10px; /* タイトルと趣味の間にスペースを追加 */
+  font-size: 2em;
+  color: #333;
+  letter-spacing: 1px; /* 文字間のスペース */
+  font-family: "Oswald", sans-serif; /* 力強いフォントを適用 */
+  font-weight: 700; /* フォントウェイトを太くする */
+  text-transform: uppercase; /* 文字をすべて大文字にする（オプション） */
+}
+#quiz-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start; /* 各アイテムの高さを上に揃える */
+}
+
+.quiz-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quiz-image {
+  width: 300px; /* 画像の幅を統一 */
+  height: 300px; /* 画像の高さを統一 */
+  object-fit: contain; /* 画像をボックスにフィットさせる */
+  border-radius: 5px;
+}
+
+.quiz-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #01080f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-button:hover {
+  background-color: #0056b3;
+}
+#feedback {
+  margin-top: 20px;
+  font-size: 24px; /* フィードバックの文字を大きく */
+  color: #333; /* 文字色を濃い色に */
+  font-weight: bold; /* 文字を太字に */
+  text-align: center; /* テキストを中央揃え */
+  display: block; /* ブロック要素として扱い、全幅を使う */
+  padding: 20px;
+  background-color: #ffffff; /* 背景色を追加 */
+  border-radius: 10px; /* 角を少し丸く */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
+
+#pfc-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#pfc-inputs input {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#Feedback {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

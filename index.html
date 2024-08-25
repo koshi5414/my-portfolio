@@ -6,10 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+    />
+
     <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    />
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <div id="container">
+      <h1>Myポートフォリオサイト</h1>
+      <img id="mypicture" src="./images/mypicture.JPG" />
+      <img id="geek" src="./images/geek.JPG" />
+      <img id="musle" src="./images/musle.JPG" />
+      <img id="trip" src="./images/trip.JPG" />
+      <img id="insta" src="./images/insta.JPG" />
+      <img id="disny" src="./images/disny.JPG" />
+      <div id="introduction">
+        <h2>Introduction</h2>
+        <p><strong>名前:</strong> 越石優太</p>
+        <p><strong>年齢:</strong> 22歳</p>
+        <p><strong>大学:</strong> 千葉大学</p>
+      </div>
+      <div id="hobby">
+        <h2>Hobby</h2>
+        <div class="hobby-item">野球観戦</div>
+        <div>
+          <h2 id="quiz-text"></h2>
+          <div id="quiz-images-container">
+            <img class="quiz-image" src="./images/giants.png" alt="Giants" />
+            <img class="quiz-image" src="./images/tigers.png" alt="Tigers" />
+            <img class="quiz-image" src="./images/carp.png" alt="Carp" />
+          </div>
+
+          <div>
+            <button id="choice-1"></button>
+            <button id="choice-2"></button>
+            <button id="choice-3"></button>
+          </div>
+          <div id="feedback"></div>
+        </div>
+        <div class="hobby-item">筋トレ</div>
+        <h1>普段のPFCを振り返ろう！</h1>
+
+        <section>
+          <h3>P, F, C を入力してください（合計 100%）</h3>
+          <div id="pfc-inputs">
+            <input id="input-p" type="number" placeholder="P (%)" />
+            <input id="input-f" type="number" placeholder="F (%)" />
+            <input id="input-c" type="number" placeholder="C (%)" />
+          </div>
+          <div id="Feedback"></div>
+        </section>
+
+        <div class="hobby-item">BJ</div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
